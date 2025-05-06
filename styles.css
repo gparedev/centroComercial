@@ -11,6 +11,19 @@ body {
     font-family: "Arvo", serif;
 }
 
-.titulo {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+.foto-logo {
+    height: 200px;
+    object-fit: contain;
 }

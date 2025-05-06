@@ -6,65 +6,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Tiendas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
-    <video
-        src="https://videos.ctfassets.net/gi6fitfj7iu4/2OXQEZD2Swkkw8BAKQkXlh/b498dabc13ac0fe99e9c53c3a5a755e3/DD_BEAUTY_MRKT_WEB_BANNER_1440x500.mp4"
-        loop autoplay></video>
-    <!-- para modal -->
-    <div class="tienda">
-        <img src="media/images/shops/boots-logo.png" alt="">
-        <h3>Boots</h3>
-        <p>Boots is the UK’s leading pharmacy-led health and beauty retailer. Boots has over 2,500 stores in the UK and
-            Ireland.</p>
-        <p>Boots is your one stop shop for all of your healthcare needs. There is also a wide variety of beauty
-            essentials, along with fragrances, toiletries, toys and gifts available in store.</p>
-        <a href="https://www.dundrum.ie/shop/boots"></a>
-    </div>
-    <div class="tienda">
-        <img src="media/images/shops/boss-logo.png" alt="">
-        <h3>Boss</h3>
-        <p>For those who lead a self-determined life driven by style and confidence.</p>
-        <p>Hugo Boss is a German luxury fashion house that was founded in 1924. The brand is known for its high-quality
-            menswear, womenswear, and accessories.</p>
-        <a href="https://www.dundrum.ie/shop/hugo-boss">enlace</a>
-    </div>
-    <div class="tienda">
-        <img src="media/images/shops/hm-logo.png" alt="">
-        <h3>H&M</h3>
-        <p>H&M is a Swedish multinational clothing retail company known for its fast-fashion</p>
-        <p>Founded in 1947, H&M is a global fashion brand and pioneer of design collaborations with style icons such as
-            Karl Lagerfeld, Stella McCartney, Viktor & Rolf, Roberto Cavalli, Comme des Garçons, Sonia Rykiel and
-            Lanvin.</p>
-        <a href="https://www.dundrum.ie/shop/hm-mens"></a>
-    </div>
-    <div class="tienda">
-        <img src="media/images/shops/tesco-logo.png" alt="">
-        <h3>Tesco</h3>
-        <p>Tesco is a British multinational grocery and general merchandise retailer headquartered in England.</p>
-        <p>You’ll find Tesco on Level 3 here in Dundrum Town Centre - easily accessible through the surface level
-            carpark & serviced by lifts and escalators throughout the centre.</p>
-        <a href="https://www.dundrum.ie/shop/tesco"></a>
-    </div>
-    <div class="tienda">
-        <img src="media/images/shops/three-logo.png" alt="">
-        <h3>Three</h3>
-        <p>Three is a mobile network operator in Ireland, providing mobile phone services and broadband.</p>
-        <p>Three is Ireland’s largest high speed network and is the fastest-growing mobile operator in the country. </p>
-        <a href="https://www.dundrum.ie/shop/3-store"></a>
-    </div>
-    <div class="tienda">
-        <img src="media/images/shops/vodafone-logo.png" alt="">
-        <h3>Vodafone</h3>
-        <p>Vodafone is a British multinational telecommunications company headquartered in London.</p>	
-        <p>Get great offers on mobile phones, home phones, broadband, TV and more from Vodafone - Ireland's leading
-            network provider and total communications </p>
-        <a href="https://www.dundrum.ie/shop/vodafone"></a>
-    </div>
-    
+    <header>
+        <h1>Tiendas</h1>
+    </header>
 
+    <article class="container mt-3">
+        <video
+            src="https://videos.ctfassets.net/gi6fitfj7iu4/2OXQEZD2Swkkw8BAKQkXlh/b498dabc13ac0fe99e9c53c3a5a755e3/DD_BEAUTY_MRKT_WEB_BANNER_1440x500.mp4"
+            loop autoplay></video>
+
+
+        <section class="row">
+            <!-- MODAL 1 -->
+            <div class="establecimiento col card m-2">
+                <img class="card-img-top foto-logo mt-4" src="media/images/shops/boots-logo.png" alt="">
+                <div class="card-body row">
+                    <div class="col">
+                        <h3 class="card-title">Boots</h3>
+                    </div>
+                    <div class="col"><a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modal1">Más
+                            información</a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Boots</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="foto-establecimiento" src="media/images/shops/boots.png" alt="">
+                            <p>Boots is the UK’s leading pharmacy-led health and beauty retailer. Boots has over 2,500
+                                stores in
+                                the UK and
+                                Ireland.</p>
+                            <p>Boots is your one stop shop for all of your healthcare needs. There is also a wide
+                                variety of
+                                beauty
+                                essentials, along with fragrances, toiletries, toys and gifts available in store.</p>
+                        </div>
+                        <div class="modal-footer"><a class="btn btn-primary"
+                                href="https://www.dundrum.ie/shop/boots">Tienda original</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL 2 -->
+            <div class="establecimiento col card m-2">
+                <img class="card-img-top foto-logo mt-4" src="media/images/shops/boss-logo.png" alt="">
+                <div class="card-body row">
+                    <div class="col">
+                        <h3 class="card-title">Boss</h3>
+                    </div>
+                    <div class="col"><a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modal2">Más
+                            información</a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Boss</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="foto-establecimiento" src="media/images/shops/boss.png" alt="">
+                            <p>For those who lead a self-determined life driven by style and confidence.</p>
+                            <p>Hugo Boss is a German luxury fashion house that was founded in 1924. The brand is known
+                                for its
+                                high-quality
+                                menswear, womenswear, and accessories.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-primary" href="https://www.dundrum.ie/shop/boss">Tienda original</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL 3 -->
+            <div class="establecimiento col card m-2">
+                <img class="card-img-top foto-logo mt-4" src="media/images/shops/hm-logo.png" alt="">
+                <div class="card-body row">
+                    <div class="col">
+                        <h3 class="card-title">H&M</h3>
+                    </div>
+                    <div class="col"><a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modal3">Más
+                            información</a></div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">H&M</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="foto-establecimiento" src="media/images/shops/hm.png" alt="">
+                            <p>H&M is a Swedish multinational clothing retail company known for its fast-fashion</p>
+                            <p>Founded in 1947, H&M is a global fashion brand and pioneer of design collaborations with
+                                style
+                                icons
+                                such as
+                                Karl Lagerfeld, Stella McCartney, Viktor & Rolf, Roberto Cavalli, Comme des Garçons,
+                                Sonia
+                                Rykiel
+                                and
+                                Lanvin.</p>
+                        </div>
+                        <div class="modal-footer"><a class="btn btn-primary"
+                                href="https://www.dundrum.ie/shop/hm-mens">Tienda original</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <!-- MODAL 4-->
+            <div class="establecimiento col card m-2">
+                <img class="card-img-top foto-logo mt-2" src="media/images/shops/tesco-logo.png" alt="">
+                <div class="card-body row">
+                    <div class="col">
+                        <h3 class="card-title">Tesco</h3>
+                    </div>
+                    <div class="col"><a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modal4">Más
+                            información</a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tesco</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="foto-establecimiento" src="media/images/shops/tesco.png" alt="">
+                            <p>Tesco is a British multinational grocery and general merchandise retailer headquartered
+                                in
+                                England.
+                            </p>
+                            <p>You’ll find Tesco on Level 3 here in Dundrum Town Centre - easily accessible through the
+                                surface
+                                level
+                                carpark & serviced by lifts and escalators throughout the centre.</p>
+                        </div>
+                        <div class="modal-footer"><a class="btn btn-primary"
+                                href="https://www.dundrum.ie/shop/tesco">Tienda original</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL 5 -->
+            <div class="establecimiento col card m-2">
+                <img class="card-img-top foto-logo mt-4" src="media/images/shops/three-logo.png" alt="">
+                <div class="card-body row">
+                    <div class="col">
+                        <h3 class="card-title">Three</h3>
+                    </div>
+                    <div class="col"><a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modal5">Más
+                            información</a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Three</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="foto-establecimiento" src="media/images/shops/three.png" alt="">
+                            <p>Three is a mobile network operator in Ireland, providing mobile phone services and
+                                broadband.</p>
+                            <p>Three is Ireland’s largest high speed network and is the fastest-growing mobile operator
+                                in the
+                                country.</p>
+                            <p>With a wide range of mobile plans, broadband options, and the latest smartphones, Three
+                                ensures
+                                you
+                                stay connected wherever you go.</p>
+                        </div>
+                        <div class="modal-footer"><a class="btn btn-primary"
+                                href="https://www.dundrum.ie/shop/3-store">Tienda original</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL 6 -->
+            <div class="establecimiento col card m-2">
+                <img class="card-img-top foto-logo mt-4" src="media/images/shops/vodafone-logo.png" alt="">
+                <div class="card-body row">
+                    <div class="col">
+                        <h3 class="card-title">Vodafone</h3>
+                    </div>
+                    <div class="col"><a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modal6">Más
+                            información</a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Vodafone</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="foto-establecimiento" src="media/images/shops/vodafone.png" alt="">
+                            <p>Vodafone is a British multinational telecommunications company headquartered in London.
+                            </p>
+                            <p>Get great offers on mobile phones, home phones, broadband, TV and more from Vodafone -
+                                Ireland's
+                                leading
+                                network provider and total communications </p>
+                        </div>
+                        <div class="modal-footer"><a class="btn btn-primary"
+                                href="https://www.dundrum.ie/shop/vodafone">Tienda original</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
 
 </body>
 

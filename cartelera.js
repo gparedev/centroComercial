@@ -16,7 +16,7 @@ fetch(jsonUrl)
         data.forEach((pelicula) => {
             // Crear el HTML de cada tarjeta
             const card = document.createElement('div');
-            card.className = 'card col-12 col-lg-5 col-xl-4';
+            card.className = 'card col-12 col-lg-5 col-xl-3';
 
             card.innerHTML = `
                 <div class="ratio ratio-16x9">

@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "OLDBOY",
+        "descripcion": "Un hombre es secuestrado y encarcelado durante 15 años.",
+        "video": "https://www.youtube.com/embed/tAaBkFChaRg"
+    },
+    {
+        "titulo": "LOS ODIOSOS 8",
+        "descripcion": "Un grupo de cazarrecompensas se encuentra atrapado.",
+        "video": "https://www.youtube.com/embed/JxVRgBOL8jc?si=or339cKHYZ9-mbEL"
+    },
+    {
+        "titulo": "INTERESTELLAR",
+        "descripcion": "Un grupo de astronautas viaja a través de un agujero de gusano.",
+        "video": "https://www.youtube.com/embed/UoSSbmD9vqc?si=i0HTzMqbv2vriwsL"
+    },
+    {
+        "titulo": "SHREK 2",
+        "descripcion": "Shrek y Fiona regresan de su luna de miel y enfrentan nuevos desafíos.",
+        "video": "https://www.youtube.com/embed/xBgSfhp5Fxo?si=fp3qVWv0awcKYIH7"
+    },
+    {
+        "titulo": "SHUTTER ISLAND",
+        "descripcion": "Un detective investiga la desaparición de una paciente en un hospital psiquiátrico.",
+        "video": "https://www.youtube.com/embed/sybSFbmzyUg?si=2rS9UyPBM0-3Sx3w"
+    },
+    {
+        "titulo": "PREDATOR BADLANDS",
+        "descripcion": "Un grupo de soldados de élite se enfrenta a un alienígena mortal.",
+        "video": "https://www.youtube.com/embed/oFkbsEKaoSE?si=pgDKaLN_MDsPWR_6"
+    }
+]

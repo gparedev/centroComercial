@@ -12,183 +12,219 @@
 <body>
 
     <!-- Barra de navegación -->
-
-    <header>
-        <h1>Ocio</h1>
+    <header class="container-fluid text-bg-dark text-center p-5">
+        <img class="logo" src="media/images/dundrum-logo.png" alt="DunDrum Logo" />
+        <nav class="container d-flex justify-content-between mt-5">
+            <a href="index.html" target="_blank">INICIO</a>
+            <a href="cine.html" target="_blank">CINE</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="ocio.html" target="_blank">OCIO</a>
+            <a href="restaurantes.html" target="_blank">RESTAURANTES</a>
+            <a href="tiendas.html" target="_blank">TIENDAS</a>
+            <a href="visitanos.html" target="_blank">VISITANOS</a>
+        </nav>
     </header>
 
-    <!-- Tienda 1: Big Bang Comics-->
-    <article>
-        <!-- Botón Modal - Logo de la tienda -->
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <img src="media\images\ocioTienda1.jpg" alt="Logo tienda Big Bang Comics">
-        </button>
+    <!-- Título -->
+    <article class="container text-center p-5">
+        <section class=" p-5 shadow-lg">
+            <h1 class="text-center p-3">Ocio</h1>
+            <p class="text-start">
+                <strong>¡Disfruta al máximo en nuestros espacios de ocio!</strong><br />
+                En Dundrum Town Centre, encontrarás una gran variedad de opciones para divertirte y relajarte.
+                Desde cines y boleras hasta restaurantes y experiencias únicas, ¡tenemos todo lo que necesitas para
+                pasarlo genial!<br />
+            </p>
+        </section>
 
-        <!-- Interior Modal con video, texto info y enlace web original -->
-        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal1Label">Big Bang Comics</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Resumen -->
-                        <p>
-                            En Big Bang Comics puedes encontrar Comics, Novelas Gráficas, Figuras de Acción y todo tipo
-                            de Merchandising
-                            y
-                            Coleccionables en un ambiente familiar.
-                        </p>
-                        <!-- Video -->
-                        <div class="d-flex justify-content-center my-4">
-                            <iframe width="450" height="253"
-                                src="https://www.youtube.com/embed/UMD0nz-pN3E?si=CRAk_LCEzGU1ssvp"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Modales -->
+        <section class="row justify-content-center p-5 gap-1">
+            <!-- MODAL 1 -->
+            <!-- Tienda 1: Big Bang Comics-->
+            <div class="establecimiento col col-xs-11 col-md-5 col-xl-3 card ">
+                <img class="card-img-top foto-logo mt-4" src="media\images\ocioTienda1.jpg"
+                    alt="Logo tienda Big Bang Comics">
+                <div class="card-body row">
+                    <div class="col d-flex justify-content-center align-items-center"><a href="#"
+                            class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                            <h3 class="card-title">Big Bang Comics</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Big Bang Comics</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <!-- Horario -->
-                        <h3>Horario</h3>
-                        <p>
-                            Lunes - 10:00h - 19:00h<br>
-                            Martes - 10:00h - 19:00h<br>
-                            Miércoles - 10:00h - 19:00h<br>
-                            Jueves - 10:00h - 19:00h<br>
-                            Viernes - 10:00h - 19:00h<br>
-                            Sábado - 10:00h - 19:00h<br>
-                            Domingo - 10:00h - 19:00h
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <!-- Enlace web -->
-                        <button type="button" class="btn btn-primary"><a
-                                href="https://stores.comichub.com/big_bang_comics">Enlace web oficial</a>
-                        </button>
+                        <div class="modal-body">
+                            <!-- Resumen -->
+                            <p>
+                                En Big Bang Comics puedes encontrar Comics, Novelas Gráficas, Figuras de Acción y todo
+                                tipo
+                                de Merchandising
+                                y
+                                Coleccionables en un ambiente familiar.
+                            </p>
+                            <!-- Video -->
+                            <div class="d-flex justify-content-center my-4">
+                                <iframe width="450" height="253"
+                                    src="https://www.youtube.com/embed/UMD0nz-pN3E?si=CRAk_LCEzGU1ssvp"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <!-- Horario -->
+                            <h3>Horario</h3>
+                            <p>
+                                Lunes - 10:00h - 19:00h<br>
+                                Martes - 10:00h - 19:00h<br>
+                                Miércoles - 10:00h - 19:00h<br>
+                                Jueves - 10:00h - 19:00h<br>
+                                Viernes - 10:00h - 19:00h<br>
+                                Sábado - 10:00h - 19:00h<br>
+                                Domingo - 10:00h - 19:00h
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <!-- Enlace web -->
+                            <button type="button" class="btn btn-primary"><a
+                                    href="https://stores.comichub.com/big_bang_comics">Enlace web oficial</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </article>
-
-    <!-- Tienda 2: Golden Discs-->
-    <article>
-        <!-- Botón modal - Logo de la tienda-->
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal2">
-            <img src="media\images\ocioTienda2.jpg" alt="Logo tienda Golden Discs">
-        </button>
-
-        <!-- Interior Modal con video, texto info y enlace web original -->
-        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal2Label">Golden Discs</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Resumen -->
-                        <p>
-                            Golden Discs se especializa en vinilos, un segmento en expansión del mercado minorista de
-                            música, y amplía
-                            continuamente su oferta para satisfacer la demanda de los clientes.<br>
-                            Además de CD, DVD y Blu-ray, también ofrece
-                            accesorios como tocadiscos y una amplia gama de auriculares para todos los presupuestos.
-                        </p>
-                        <!-- Video -->
-                        <div class="d-flex justify-content-center my-4">
-                            <iframe width="450" height="253"
-                                src="https://www.youtube.com/embed/skS67IyVhAA?si=G7I-_qvGRD-_9XtI"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- MODAL 2 -->
+            <!-- Tienda 2: Golden Discs-->
+            <div class="establecimiento col col-xs-11 col-md-5 col-xl-3 card ">
+                <img class="card-img-top foto-logo mt-4" src="media\images\ocioTienda2.jpg"
+                    alt="Logo tienda Golden Discs">
+                <div class="card-body row">
+                    <div class="col d-flex justify-content-center align-items-center"><a href="#"
+                            class="btn btn-primary p-4" data-bs-toggle="modal" data-bs-target="#modal1">
+                            <h3 class="card-title">Golden Discs</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Golden Discs</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <!-- Horario -->
-                        <h3>Horario</h3>
-                        <p>
-                            Lunes - 10:00h - 21:00h<br>
-                            Martes - 09:00h - 21:00h<br>
-                            Miércoles - 09:00h - 21:00h<br>
-                            Jueves - 09:00h - 21:00h<br>
-                            Viernes - 09:00h - 21:00h<br>
-                            Sábado - 09:00h - 19:00h<br>
-                            Domingo - 10:00h - 19:00h<br>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <!-- Enlace web -->
-                        <button type="button" class="btn btn-primary"><a href="https://goldendiscs.ie/">Enlace web
-                                oficial</a></button>
+                        <div class="modal-body">
+                            <!-- Resumen -->
+                            <p>
+                                Golden Discs se especializa en vinilos, un segmento en expansión del mercado minorista
+                                de
+                                música, y amplía
+                                continuamente su oferta para satisfacer la demanda de los clientes.<br>
+                                Además de CD, DVD y Blu-ray, también ofrece
+                                accesorios como tocadiscos y una amplia gama de auriculares para todos los presupuestos.
+                            </p>
+                            <!-- Video -->
+                            <div class="d-flex justify-content-center my-4">
+                                <iframe width="450" height="253"
+                                    src="https://www.youtube.com/embed/skS67IyVhAA?si=G7I-_qvGRD-_9XtI"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <!-- Horario -->
+                            <h3>Horario</h3>
+                            <p>
+                                Lunes - 10:00h - 21:00h<br>
+                                Martes - 09:00h - 21:00h<br>
+                                Miércoles - 09:00h - 21:00h<br>
+                                Jueves - 09:00h - 21:00h<br>
+                                Viernes - 09:00h - 21:00h<br>
+                                Sábado - 09:00h - 19:00h<br>
+                                Domingo - 10:00h - 19:00h<br>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <!-- Enlace web -->
+                            <button type="button" class="btn btn-primary"><a href="https://goldendiscs.ie/">Enlace web
+                                    oficial</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </article>
-
-    <!-- Tienda 3: The card Company-->
-    <article>
-        <!-- Botón modal - Logo de la tienda-->
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal3">
-            <img src="media\images\ocioTienda3.png" alt="Logo tienda The card Company">
-        </button>
-
-        <!-- Interior Modal con video, texto info y enlace web original -->
-        <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal3Label">The Card Company</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Resumen -->
-                        <p>
-                            Enviar una tarjeta es una excelente manera de alegrarle el día a alguien, así que asegúrate
-                            de enviar la
-                            mejor.
-                            <br>
-                            Los ramos de globos son nuestra especialidad, así que, sea cual sea la ocasión, visita
-                            cualquiera de
-                            nuestras
-                            tiendas para que nuestro amable y experimentado personal te asesore.
-                            <br>
-                            The Card Company tiene un nuevo y fantástico servicio: ¡crea tus propias tarjetas
-                            personalizadas en la
-                            tienda
-                            hoy mismo!
-                        </p>
-                        <!-- Video -->
-                        <div class="d-flex justify-content-center my-4">
-                            <iframe width="450" height="253"
-                                src="https://www.youtube.com/embed/OHJtnCdGcdI?si=7LUYkNQYi-9Ie5mx"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- MODAL 3 -->
+            <!-- Tienda 3: The card Company-->
+            <div class="establecimiento col col-xs-11 col-md-5 col-xl-3 card ">
+                <img class="card-img-top foto-logo mt-4" src="media\images\ocioTienda3.png"
+                    alt="Logo tienda The card Company">
+                <div class="card-body row">
+                    <div class="col d-flex justify-content-center align-items-center"><a href="#"
+                            class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                            <h3 class="card-title">The Card Company</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">The Card Company</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <!-- Horario -->
-                        <h3>Horario</h3>
-                        <p>
-                            Lunes - 09:00h - 21:00h<br>
-                            Martes - 09:00h - 21:00h<br>
-                            Miércoles - 09:00h - 21:00h<br>
-                            Jueves - 09:00h - 21:00h<br>
-                            Viernes - 09:00h - 21:00h<br>
-                            Sábado - 09:00h - 19:00h<br>
-                            Domingo - 10:00h - 19:00h<br>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <!-- Enlace web -->
-                        <button type="button" class="btn btn-primary"><a href="https://www.thecardcompany.ie/">Enlace
-                                web
-                                oficial</a></button>
+                        <div class="modal-body">
+                            <!-- Resumen -->
+                            <p>
+                                Enviar una tarjeta es una excelente manera de alegrarle el día a alguien, así que
+                                asegúrate
+                                de enviar la
+                                mejor.
+                                <br>
+                                Los ramos de globos son nuestra especialidad, así que, sea cual sea la ocasión, visita
+                                cualquiera de
+                                nuestras
+                                tiendas para que nuestro amable y experimentado personal te asesore.
+                                <br>
+                                The Card Company tiene un nuevo y fantástico servicio: ¡crea tus propias tarjetas
+                                personalizadas en la
+                                tienda
+                                hoy mismo!
+                            </p>
+                            <!-- Video -->
+                            <div class="d-flex justify-content-center my-4">
+                                <iframe width="450" height="253"
+                                    src="https://www.youtube.com/embed/OHJtnCdGcdI?si=7LUYkNQYi-9Ie5mx"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <!-- Horario -->
+                            <h3>Horario</h3>
+                            <p>
+                                Lunes - 09:00h - 21:00h<br>
+                                Martes - 09:00h - 21:00h<br>
+                                Miércoles - 09:00h - 21:00h<br>
+                                Jueves - 09:00h - 21:00h<br>
+                                Viernes - 09:00h - 21:00h<br>
+                                Sábado - 09:00h - 19:00h<br>
+                                Domingo - 10:00h - 19:00h<br>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <!-- Enlace web -->
+                            <button type="button" class="btn btn-primary"><a
+                                    href="https://www.thecardcompany.ie/">Enlace
+                                    web
+                                    oficial</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
     </article>
 
     <!-- Footer -->

@@ -77,3 +77,12 @@
         animation-play-state: running; /*paused para que se pare*/
     }
 }
+
+.cartelera-img {
+    transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+.cartelera-img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+}

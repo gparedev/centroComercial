@@ -285,16 +285,353 @@
         </article>
 
         <!-- Cartelera -->
-        <article class="container text-center p-5">
-            <section class="text-start p-5 border-dark shadow-lg">
-                <h2>🎞️ Cartelera</h2>
-                <!-- Contenedor donde se generarán las tarjetas dinámicamente -->
-                <div class="row d-flex justify-content-center gap-4 p-3" id="cartelera">
-                    <!-- Las tarjetas se generarán dinámicamente aquí -->
+
+        <div class="row d-flex justify-content-center align-items-center gap-5 mx-auto cartelera">
+            <!-- Card 1 -->
+            <div
+                class="card movie-card col-12 col-md-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modalMickey17"
+                style="cursor: pointer"
+            >
+                <img
+                    src="https://pics.filmaffinity.com/mickey_17-530854063-large.jpg"
+                    class="card-img-top cartelera-img"
+                    alt="Póster de la película"
+                />
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mickey 17</h5>
                 </div>
-            </section>
-        </article>
-        
+            </div>
+
+            <!-- Modal 1 -->
+            <div
+                class="modal fade"
+                id="modalMickey17"
+                tabindex="-1"
+                aria-labelledby="modalMickey17Label"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalMickey17Label">Mickey 17</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/tA1s65o_kYM?si=n85jzQwef5Pi6zJo"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+
+                            <p class="mt-3">
+                                Mickey 17 es una película de ciencia ficción dirigida por Bong
+                                Joon-ho. ¡No te la pierdas!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="card movie-card col-12 col-md-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modalJJK"
+                style="cursor: pointer"
+            >
+                <img
+                    src="https://pics.filmaffinity.com/jujutsu_kaisen_2-848252164-large.jpg"
+                    class="card-img-top cartelera-img"
+                    alt="Póster de la película"
+                />
+                <div class="card-body text-center">
+                    <h5 class="card-title">Jujutsu Kaisen 2</h5>
+                </div>
+            </div>
+
+            <!-- Modal 2 -->
+            <div
+                class="modal fade"
+                id="modalJJK"
+                tabindex="-1"
+                aria-labelledby="modalJJKLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalJJKLabel">Jujutsu Kaisen 2</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/a70_eOnIS3o?si=2UCehCka66r4OCGj"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+
+                            <p class="mt-3">
+                                Jujutsu Kaisen 2 es una película de acción y fantasía basada en el
+                                popular anime. ¡No te la pierdas!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                class="card movie-card col-12 col-md-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modalChernobyl"
+                style="cursor: pointer"
+            >
+                <img
+                    src="https://pics.filmaffinity.com/chernobyl-183665235-large.jpg"
+                    class="card-img-top cartelera-img"
+                    alt="Póster de la película"
+                />
+                <div class="card-body text-center">
+                    <h5 class="card-title">Chernobyl</h5>
+                </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div
+                class="modal fade"
+                id="modalChernobyl"
+                tabindex="-1"
+                aria-labelledby="modalChernobylLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalChernobylLabel">Chernobyl</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/s9APLXM9Ei8?si=ggvprIhRdKH5pLFr"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+
+                            <p class="mt-3">
+                                Chernobyl es una serie dramática basada en los eventos del desastre
+                                nuclear de 1986. ¡No te la pierdas!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+                class="card movie-card col-12 col-md-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modalTheLastDance"
+                style="cursor: pointer"
+            >
+                <img
+                    src="https://pics.filmaffinity.com/the_last_dance-389158062-large.jpg"
+                    class="card-img-top cartelera-img"
+                    alt="Póster de la película"
+                />
+                <div class="card-body text-center">
+                    <h5 class="card-title">The Last Dance</h5>
+                </div>
+            </div>
+
+            <!-- Modal 4 -->
+            <div
+                class="modal fade"
+                id="modalTheLastDance"
+                tabindex="-1"
+                aria-labelledby="modalTheLastDanceLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTheLastDanceLabel">The Last Dance</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/N9Z9JtNcCWY?si=CLGETtZyYpU3QnJn"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+
+                            <p class="mt-3">
+                                The Last Dance es una serie documental que narra la carrera de
+                                Michael Jordan y su impacto en el baloncesto. ¡No te la pierdas!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+                class="card movie-card col-12 col-md-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modalParasitos"
+                style="cursor: pointer"
+            >
+                <img
+                    src="https://pics.filmaffinity.com/gisaengchung-432616131-large.jpg"
+                    class="card-img-top cartelera-img"
+                    alt="Póster de la película"
+                />
+                <div class="card-body text-center">
+                    <h5 class="card-title">Parásitos</h5>
+                </div>
+            </div>
+
+            <!-- Modal 5 -->
+            <div
+                class="modal fade"
+                id="modalParasitos"
+                tabindex="-1"
+                aria-labelledby="modalParasitosLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalParasitosLabel">Parásitos</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/90dWVETAdtI?si=bSSwIZ0l_Tw6zAqD"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+
+                            <p class="mt-3">
+                                Parásitos es una película surcoreana que explora la lucha de clases
+                                a través de la historia de dos familias. Ganadora del Óscar a la
+                                Mejor Película. ¡No te la pierdas!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+                class="card movie-card col-12 col-md-3"
+                data-bs-toggle="modal"
+                data-bs-target="#modalSpiderman"
+                style="cursor: pointer"
+            >
+                <img
+                    src="https://pics.filmaffinity.com/spider_man_across_the_spider_verse-257260163-large.jpg"
+                    class="card-img-top cartelera-img"
+                    alt="Póster de la película"
+                />
+                <div class="card-body text-center">
+                    <h5 class="card-title">Spider-Man</h5>
+                </div>
+            </div>
+
+            <!-- Modal 6 -->
+            <div
+                class="modal fade"
+                id="modalSpiderman"
+                tabindex="-1"
+                aria-labelledby="modalSpidermanLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSpidermanLabel">Spider-Man</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/cqGjhVJWtEg?si=4TLCOCgdL9La9CMb"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+
+                            <p class="mt-3">
+                                Spider-Man es una película de acción y aventura basada en el popular
+                                superhéroe de Marvel. Sigue las aventuras de Miles Morales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENTRADAS -->
         <article class="container text-center p-5">
             <section class="text-center p-5 border-dark shadow-lg">
                 <h3>🎟️ Comprar entradas</h3>

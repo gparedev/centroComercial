@@ -284,17 +284,22 @@
             </section>
         </article>
 
-        <!-- Cartelera -->
-        <article class="container text-center p-5">
-            <section class="text-start p-5 border-dark shadow-lg">
-                <h2>🎞️ Cartelera</h2>
-                <!-- Contenedor donde se generarán las tarjetas dinámicamente -->
-                <div class="row d-flex justify-content-center gap-4 p-3" id="cartelera">
-                    <!-- Las tarjetas se generarán dinámicamente aquí -->
-                </div>
-            </section>
-        </article>
-        
+        <!-- Cartelera para pantallas pequeñas -->
+        <div class="container d-md-none">
+            <div class="row mx-auto cartelera gap-5" id="cartelera-small">
+                <!-- Las tarjetas se generarán dinámicamente aquí -->
+            </div>
+        </div>
+
+        <!-- Cartelera para pantallas medianas y grandes -->
+        <div
+            class="row d-none d-md-flex justify-content-center align-items-center gap-5 mx-auto cartelera"
+            id="cartelera-large"
+        >
+            <!-- Las tarjetas se generarán dinámicamente aquí -->
+        </div>
+
+        <!-- ENTRADAS -->
         <article class="container text-center p-5">
             <section class="text-center p-5 border-dark shadow-lg">
                 <h3>🎟️ Comprar entradas</h3>

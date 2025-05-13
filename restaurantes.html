@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacto.css">
     <title>Restaurantes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
@@ -12,67 +13,308 @@
 
 <body>
 
-    <header>
-        <h1>Restaurantes</h1>
+    <!-- sidebar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="media/images/dundrum-logo.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top me-2"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <img src="media/images/dundrum-logo.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top me-2">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="index.html"><i
+                                    class="bi bi-house-fill"></i>
+                                Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="cine.html"><i class="bi bi-film"></i> Cine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contacto.html"><i class="bi bi-envelope-fill"></i>
+                                Contacto</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="restaurantes.html"><i class="bi bi-fork-knife"></i>
+                                Restaurantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="tiendas.html"><i class="bi bi-bag-fill"></i>
+                                Tiendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="visitanos.html"><i class="bi bi-geo-fill"></i>
+                                Visítanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    <header class="container-fluid text-bg-dark text-center p-5 mt-5">
+        <img class="logo" src="media/images/dundrum-logo.png" alt="DunDrum Logo" />
+        <nav class="container d-flex justify-content-between mt-5">
+            <a href="index.html" target="_blank">INICIO</a>
+            <a href="cine.html" target="_blank">CINE</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="ocio.html" target="_blank">OCIO</a>
+            <a href="restaurantes.html" target="_blank">RESTAURANTES</a>
+            <a href="tiendas.html" target="_blank">TIENDAS</a>
+            <a href="visitanos.html" target="_blank">VISITANOS</a>
+        </nav>
     </header>
 
-    <!-- KFC
-<p>KFC is the world’s most popular chicken restaurant chain, specializing in Original Recipe®, Extra
-                    Crispy®,
-                    and Original Recipe Strips with home-style sides, and freshly made chicken sandwiches.</p>
-                <p>KFC is located on the second floor in the Cinema Building of the centre. KFC is the world’s most
-                    popular
-                    chicken restaurant chain, specializing in Original Recipe®, Extra Crispy®, and Original Recipe
-                    Strips
-                    with home-style sides, and freshly made chicken sandwiches.</p>
+    <article class="container text-center p-5">
+        <section class="p-5 shadow-lg">
+            <h1 class="text-center p-3 pb-4">Nuestras restaurantes</h1>
+            <p class="text-start">
+                <strong>¡Descubre los mejores sabores en nuestros restaurantes!</strong><br />
+                En Dundrum Town Centre, contamos con una amplia selección de restaurantes para todos los gustos.
+                Desde cocina internacional hasta opciones locales, ¡disfruta de una experiencia culinaria única!<br />
+            </p>
+        </section>
 
-McDonalds
-<p>McDonald's is a global fast-food chain known for its burgers, fries, and iconic golden arches.</p>
-                <p>Since 1977, we’ve been proud to serve the Irish people with some of their favourite food. And along
-                    the
-                    way,
-                    we’ve managed not just to live history, but create it: from the first drive-thru restaurant in
-                    Europe,
-                    to
-                    the first McCafé in Europe to our ongoing food innovation, McDonald’s has been at the forefront of
-                    serving
-                    our customers. It’s been quite the journey, and we promise this is just the beginning-we’ve got our
-                    hearts
-                    set on making more history.</p>
+        <section class="row justify-content-center py-5 g-3">
+            <!-- ## MODALES ## -->
+            <!-- MODAL 1 -->
+            <div class="establecimiento col-12 col-md-6 col-xl-4 p-3 card ">
+                <img class="card-img-top foto-logo mt-4" src="media/images/shops/mcdonalds-logo.svg" alt="">
+                <div class="card-body row">
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal1">
+                            <h3>McDonalds</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">KFC</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/mcdonalds.png" alt="">
+                            <p>McDonald's is a global fast-food chain known for its burgers, fries, and iconic golden
+                                arches.</p>
+                            <p>Since 1977, we’ve been proud to serve the Irish people with some of their favourite food.
+                                And along
+                                the
+                                way,
+                                we’ve managed not just to live history, but create it: from the first drive-thru
+                                restaurant in
+                                Europe,
+                                to
+                                the first McCafé in Europe to our ongoing food innovation, McDonald’s has been at the
+                                forefront of
+                                serving
+                                our customers. It’s been quite the journey, and we promise this is just the
+                                beginning-we’ve got our
+                                hearts
+                                set on making more history.</p>
+                        </div>
+                        <div class="modal-footer"><a class="btn btn-dark" href="https://www.dundrum.ie/shop/kfc">Tienda
+                                original</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL 2 -->
+            <div class="establecimiento  col-12 col-md-6 col-xl-4 card p-3 ">
+                <img class="card-img-top foto-logo mt-4" src="media/images/shops/kfc-logo.svg" alt="">
+                <div class="card-body row">
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal2">
+                            <h3>KFC</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">KFC</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/kfc.png" alt="">
+                            <p>KFC is the world’s most popular chicken restaurant chain, specializing in Original
+                                Recipe®, Extra Crispy®, and Original Recipe Strips with home-style sides, and freshly
+                                made chicken sandwiches. </p>
+                            <p>KFC is located on the second floor in the Cinema Building of the centre. KFC is the
+                                world’s most popular chicken restaurant chain, specializing in Original Recipe®, Extra
+                                Crispy®, and Original Recipe Strips with home-style sides, and freshly made chicken
+                                sandwiches.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-dark" href="https://www.dundrum.ie/shop/mcdonalds">Tienda original</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL 3 -->
+            <div class="establecimiento  col-12 col-md-6 col-xl-4 card p-3 ">
+                <img class="card-img-top foto-logo mt-4" src="media/images/shops/costa-cafe-logo.png" alt="">
+                <div class="card-body row">
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal3">
+                            <h3>Costa Café</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Costa Café</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/costa-cafe.png" alt="">
+                            <p>Costa Coffee is the UK’s favourite coffee shop, with over 2,000 stores across the UK and
+                                Ireland.</p>
+                            <p>Founded in 1947, H&M is a global fashion brand and pioneer of design collaborations with
+                                style icons
+                                such
+                                as Karl Lagerfeld, Stella McCartney, Viktor & Rolf, Roberto Cavalli, Comme des Garçons,
+                                Sonia Rykiel
+                                and
+                                Lanvin.</p>
+                        </div>
+                        <div class="modal-footer"><a class="btn btn-dark"
+                                href="https://www.dundrum.ie/shop/costa-the-foodhall">Tienda original</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL 4-->
+            <div class="establecimiento  col-12 col-md-6 col-xl-4 card p-3 ">
+                <img class="card-img-top foto-logo mt-4" src="media/images/shops/five-guys-logo.png" alt="">
+                <div class="card-body row">
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal4">
+                            <h3>Five Guys</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Five Guys</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/five-guys.png" alt="">
+                            <p>Five Guys is a fast-casual restaurant chain focused on hamburgers, hot dogs, and French
+                                fries.</p>
+                            <p>Get ready for carnivore heaven! FIVE GUYS Burger and Fries is now open! The cult American
+                                restaurant
+                                known
+                                for its delicious burgers and crispy chips has finally landed in Dublin.</p>
+                        </div>
+                        <div class="modal-footer"><a class="btn btn-dark"
+                                href="https://www.dundrum.ie/shop/five-guys">Tienda original</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL 5 -->
+            <div class="establecimiento  col-12 col-md-6 col-xl-4 card p-3 ">
+                <img class="card-img-top foto-logo mt-4" src="media/images/shops/ananda-logo.png" alt="">
+                <div class="card-body row">
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal5">
+                            <h3>Ananda</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ananda</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/ananda.png" alt="">
+                            <p>Ananda is a fine dining Indian restaurant located in Dundrum Town Centre, Dublin,
+                                Ireland.</p>
+                            <p>Ananda, Ireland's finest Indian restaurant, has consistently earned recognition from the
+                                MICHELIN
+                                Guide
+                                since its opening in 2008, including the prestigious recommendation for 2024. Located in
+                                a prime
+                                spot,
+                                Ananda combines an outstanding location, exquisite interior design, and exceptional
+                                service, led by
+                                the
+                                esteemed Anand.</p>
+                        </div>
+                        <div class="modal-footer"><a class="btn btn-dark"
+                                href="https://www.dundrum.ie/shop/ananda">Tienda original</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL 6 -->
+            <div class="establecimiento col-12 col-md-6 col-xl-4 card p-3 ">
+                <img class="card-img-top foto-logo mt-4" src="media/images/shops/ginos-logo.png" alt="">
+                <div class="card-body row">
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal6">
+                            <h3>Gino's Gelato</h3>
+                        </a></div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Gino's Gelato</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/ginos.png" alt="">
+                            <p>Gino's Gelato offers award-winning gelato made with Irish organic milk and premium
+                                Italian
+                                ingredients.</p>
+                            <p>Merging the very best of Italy & Ireland, Gino's uses only 100% Irish organic milk mixed
+                                with the
+                                finest Italian ingredients creating a gelato that has even beaten the Italians
+                                themselves in
+                                competitions & is now adorned with awards both in Ireland & abroad!</p>
+                        </div>
+                        <div class="modal-footer"><a class="btn btn-dark"
+                                href="https://www.dundrum.ie/shop/ginos-gelato">Tienda original</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-Costa Café
-<p>Costa Coffee is the UK’s favourite coffee shop, with over 2,000 stores across the UK and Ireland.</p>
-                <p>Founded in 1947, H&M is a global fashion brand and pioneer of design collaborations with style icons
-                    such
-                    as Karl Lagerfeld, Stella McCartney, Viktor & Rolf, Roberto Cavalli, Comme des Garçons, Sonia Rykiel
-                    and
-                    Lanvin.</p>
-Five Guys
-<p>Five Guys is a fast-casual restaurant chain focused on hamburgers, hot dogs, and French fries.</p>
-                <p>Get ready for carnivore heaven! FIVE GUYS Burger and Fries is now open! The cult American restaurant
-                    known
-                    for its delicious burgers and crispy chips has finally landed in Dublin.</p>
+        <section class="pt-5">
+            <video class="border rounded-5"
+                src="https://videos.ctfassets.net/gi6fitfj7iu4/2OXQEZD2Swkkw8BAKQkXlh/b498dabc13ac0fe99e9c53c3a5a755e3/DD_BEAUTY_MRKT_WEB_BANNER_1440x500.mp4"
+                loop autoplay></video>
 
-Ananda
-<p>Ananda is a fine dining Indian restaurant located in Dundrum Town Centre, Dublin, Ireland.</p>
-                <p>Ananda, Ireland's finest Indian restaurant, has consistently earned recognition from the MICHELIN
-                    Guide
-                    since its opening in 2008, including the prestigious recommendation for 2024. Located in a prime
-                    spot,
-                    Ananda combines an outstanding location, exquisite interior design, and exceptional service, led by
-                    the
-                    esteemed Anand.</p>
-
-Gino's Gelato
-
-<p>Gino's Gelato offers award-winning gelato made with Irish organic milk and premium Italian
-                    ingredients.</p>
-                <p>Merging the very best of Italy & Ireland, Gino's uses only 100% Irish organic milk mixed with the
-                    finest Italian ingredients creating a gelato that has even beaten the Italians themselves in
-                    competitions & is now adorned with awards both in Ireland & abroad!</p>
-
- -->
-
+        </section>
+    </article>
 
 </body>
 

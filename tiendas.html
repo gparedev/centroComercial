@@ -9,12 +9,59 @@
     <title>Tiendas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
 </head>
 
 <body>
 
-    <!-- nav -->
-    <header class="container-fluid text-bg-dark text-center p-5">
+    <!-- sidebar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="media/images/dundrum-logo.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top me-2"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <img src="media/images/dundrum-logo.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top me-2">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i>
+                                Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="cine.html"><i class="bi bi-film"></i> Cine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contacto.html"><i class="bi bi-envelope-fill"></i> Contacto</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="restaurantes.html"><i class="bi bi-fork-knife"></i> Restaurantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="tiendas.html"><i class="bi bi-bag-fill"></i> Tiendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="visitanos.html"><i class="bi bi-geo-fill"></i> Visítanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    <header class="container-fluid text-bg-dark text-center p-5 mt-5">
         <img class="logo" src="media/images/dundrum-logo.png" alt="DunDrum Logo" />
         <nav class="container d-flex justify-content-between mt-5">
             <a href="index.html" target="_blank">INICIO</a>
@@ -28,8 +75,8 @@
     </header>
 
     <article class="container text-center p-5">
-        <section class=" p-5 shadow-lg">
-            <h1 class="text-center p-3">Nuestras tiendas</h1>
+        <section class="p-5 shadow-lg">
+            <h1 class="text-center p-3 pb-4">Nuestras tiendas</h1>
             <p class="text-start">
                 <strong>¡Encuentra lo que necesites en nuestras tiendas!</strong><br />
                 En Dundrum Town Centre, tenemos una amplia variedad de tiendas para satisfacer todas tus necesidades.
@@ -37,17 +84,17 @@
             </p>
         </section>
 
-        <section class="row justify-content-center p-5 gap-1">
+        <section class="row justify-content-center py-5 g-3">
             <!-- ## MODALES ## -->
             <!-- MODAL 1 -->
-            <div class="establecimiento col col-xs-11 col-md-5 col-xl-3 card ">
+            <div class="establecimiento col-12 col-md-6 col-xl-4 p-3 card ">
                 <img class="card-img-top foto-logo mt-4" src="media/images/shops/boots-logo.png" alt="">
                 <div class="card-body row">
-                    <div class="col">
-                        <h3 class="card-title">Boots</h3>
-                    </div>
-                    <div class="col d-flex justify-content-end"><a href="#" class="btn btn-primary"
-                            data-bs-toggle="modal" data-bs-target="#modal1">Información</a></div>
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal1">
+                            <h3>Boots</h3>
+                        </a></div>
                 </div>
             </div>
             <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -57,31 +104,33 @@
                             <h5 class="modal-title" id="exampleModalLabel">Boots</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <img class="foto-establecimiento" src="media/images/shops/boots.png" alt="">
-                            <p>Boots is the UK’s leading pharmacy-led health and beauty retailer. Boots has over 2,500
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/boots.png" alt="">
+                            <p>Boots is the UK’s leading pharmacy-led health and beauty retailer. Boots has over
+                                2,500
                                 stores in
                                 the UK and
                                 Ireland.</p>
                             <p>Boots is your one stop shop for all of your healthcare needs. There is also a wide
                                 variety of
                                 beauty
-                                essentials, along with fragrances, toiletries, toys and gifts available in store.</p>
+                                essentials, along with fragrances, toiletries, toys and gifts available in store.
+                            </p>
                         </div>
-                        <div class="modal-footer"><a class="btn btn-primary"
+                        <div class="modal-footer"><a class="btn btn-dark"
                                 href="https://www.dundrum.ie/shop/boots">Tienda original</a></div>
                     </div>
                 </div>
             </div>
             <!-- MODAL 2 -->
-            <div class="establecimiento col col-xs-11 col-md-5 col-xl-3 card ">
+            <div class="establecimiento  col-12 col-md-6 col-xl-4 card p-3 ">
                 <img class="card-img-top foto-logo mt-4" src="media/images/shops/boss-logo.png" alt="">
                 <div class="card-body row">
-                    <div class="col">
-                        <h3 class="card-title">Boss</h3>
-                    </div>
-                    <div class="col d-flex justify-content-end"><a href="#" class="btn btn-primary"
-                            data-bs-toggle="modal" data-bs-target="#modal2">Información</a></div>
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal2">
+                            <h3>Boss</h3>
+                        </a></div>
                 </div>
             </div>
             <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -91,29 +140,30 @@
                             <h5 class="modal-title" id="exampleModalLabel">Boss</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <img class="foto-establecimiento" src="media/images/shops/boss.png" alt="">
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/boss.png" alt="">
                             <p>For those who lead a self-determined life driven by style and confidence.</p>
-                            <p>Hugo Boss is a German luxury fashion house that was founded in 1924. The brand is known
+                            <p>Hugo Boss is a German luxury fashion house that was founded in 1924. The brand is
+                                known
                                 for its
                                 high-quality
                                 menswear, womenswear, and accessories.</p>
                         </div>
                         <div class="modal-footer">
-                            <a class="btn btn-primary" href="https://www.dundrum.ie/shop/boss">Tienda original</a>
+                            <a class="btn btn-dark" href="https://www.dundrum.ie/shop/boss">Tienda original</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- MODAL 3 -->
-            <div class="establecimiento col col-xs-11 col-md-5 col-xl-3 card ">
+            <div class="establecimiento  col-12 col-md-6 col-xl-4 card p-3 ">
                 <img class="card-img-top foto-logo mt-4" src="media/images/shops/hm-logo.png" alt="">
                 <div class="card-body row">
-                    <div class="col">
-                        <h3 class="card-title">H&M</h3>
-                    </div>
-                    <div class="col d-flex justify-content-end"><a href="#" class="btn btn-primary"
-                            data-bs-toggle="modal" data-bs-target="#modal3">Información</a></div>
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal3">
+                            <h3>H&M</h3>
+                        </a></div>
                 </div>
             </div>
             <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -123,10 +173,11 @@
                             <h5 class="modal-title" id="exampleModalLabel">H&M</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <img class="foto-establecimiento" src="media/images/shops/hm.png" alt="">
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/hm.png" alt="">
                             <p>H&M is a Swedish multinational clothing retail company known for its fast-fashion</p>
-                            <p>Founded in 1947, H&M is a global fashion brand and pioneer of design collaborations with
+                            <p>Founded in 1947, H&M is a global fashion brand and pioneer of design collaborations
+                                with
                                 style
                                 icons
                                 such as
@@ -136,20 +187,20 @@
                                 and
                                 Lanvin.</p>
                         </div>
-                        <div class="modal-footer"><a class="btn btn-primary"
+                        <div class="modal-footer"><a class="btn btn-dark"
                                 href="https://www.dundrum.ie/shop/hm-mens">Tienda original</a></div>
                     </div>
                 </div>
             </div>
             <!-- MODAL 4-->
-            <div class="establecimiento col col-xs-11 col-md-5 col-xl-3 card ">
+            <div class="establecimiento  col-12 col-md-6 col-xl-4 card p-3 ">
                 <img class="card-img-top foto-logo mt-4" src="media/images/shops/tesco-logo.png" alt="">
                 <div class="card-body row">
-                    <div class="col">
-                        <h3 class="card-title">Tesco</h3>
-                    </div>
-                    <div class="col d-flex justify-content-end"><a href="#" class="btn btn-primary"
-                            data-bs-toggle="modal" data-bs-target="#modal4">Información</a></div>
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal4">
+                            <h3>Tesco</h3>
+                        </a></div>
                 </div>
             </div>
             <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -159,66 +210,71 @@
                             <h5 class="modal-title" id="exampleModalLabel">Tesco</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <img class="foto-establecimiento" src="media/images/shops/tesco.png" alt="">
-                            <p>Tesco is a British multinational grocery and general merchandise retailer headquartered
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/tesco.png" alt="">
+                            <p>Tesco is a British multinational grocery and general merchandise retailer
+                                headquartered
                                 in
                                 England.
                             </p>
-                            <p>You’ll find Tesco on Level 3 here in Dundrum Town Centre - easily accessible through the
+                            <p>You’ll find Tesco on Level 3 here in Dundrum Town Centre - easily accessible
+                                through the
                                 surface
                                 level
                                 carpark & serviced by lifts and escalators throughout the centre.</p>
                         </div>
-                        <div class="modal-footer"><a class="btn btn-primary"
+                        <div class="modal-footer"><a class="btn btn-dark"
                                 href="https://www.dundrum.ie/shop/tesco">Tienda original</a></div>
                     </div>
                 </div>
             </div>
             <!-- MODAL 5 -->
-            <div class="establecimiento col col-xs-11 col-md-5 col-xl-3 card ">
+            <div class="establecimiento  col-12 col-md-6 col-xl-4 card p-3 ">
                 <img class="card-img-top foto-logo mt-4" src="media/images/shops/three-logo.png" alt="">
                 <div class="card-body row">
-                    <div class="col">
-                        <h3 class="card-title">Three</h3>
-                    </div>
-                    <div class="col d-flex justify-content-end"><a href="#" class="btn btn-primary"
-                            data-bs-toggle="modal" data-bs-target="#modal5">Información</a></div>
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal5">
+                            <h3>3Store</h3>
+                        </a></div>
                 </div>
             </div>
             <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Three</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">3Store</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <img class="foto-establecimiento" src="media/images/shops/three.png" alt="">
-                            <p>Three is a mobile network operator in Ireland, providing mobile phone services and
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/three.png" alt="">
+                            <p>Three is a mobile network operator in Ireland, providing mobile phone
+                                services and
                                 broadband.</p>
-                            <p>Three is Ireland’s largest high speed network and is the fastest-growing mobile operator
+                            <p>Three is Ireland’s largest high speed network and is the fastest-growing
+                                mobile operator
                                 in the
                                 country.</p>
-                            <p>With a wide range of mobile plans, broadband options, and the latest smartphones, Three
+                            <p>With a wide range of mobile plans, broadband options, and the latest
+                                smartphones, Three
                                 ensures
                                 you
                                 stay connected wherever you go.</p>
                         </div>
-                        <div class="modal-footer"><a class="btn btn-primary"
+                        <div class="modal-footer"><a class="btn btn-dark"
                                 href="https://www.dundrum.ie/shop/3-store">Tienda original</a></div>
                     </div>
                 </div>
             </div>
             <!-- MODAL 6 -->
-            <div class="establecimiento col-xs-11 col-md-5 col-xl-3 card ">
+            <div class="establecimiento col-12 col-md-6 col-xl-4 card p-3 ">
                 <img class="card-img-top foto-logo mt-4" src="media/images/shops/vodafone-logo.png" alt="">
                 <div class="card-body row">
-                    <div class="col">
-                        <h3 class="card-title">Vodafone</h3>
-                    </div>
-                    <div class="col d-flex justify-content-end"><a href="#" class="btn btn-primary"
-                            data-bs-toggle="modal" data-bs-target="#modal6">Información</a></div>
+                    <div class="col d-flex justify-content-end"><a href="#"
+                            class="btn btn-lg btn-outline-light text-dark" data-bs-toggle="modal"
+                            data-bs-target="#modal6">
+                            <h3>Vodafone</h3>
+                        </a></div>
                 </div>
             </div>
             <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -228,16 +284,18 @@
                             <h5 class="modal-title" id="exampleModalLabel">Vodafone</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <img class="foto-establecimiento" src="media/images/shops/vodafone.png" alt="">
-                            <p>Vodafone is a British multinational telecommunications company headquartered in London.
+                        <div class="modal-body ">
+                            <img class="foto-establecimiento pb-4" src="media/images/shops/vodafone.png" alt="">
+                            <p>Vodafone is a British multinational telecommunications company
+                                headquartered in London.
                             </p>
-                            <p>Get great offers on mobile phones, home phones, broadband, TV and more from Vodafone -
+                            <p>Get great offers on mobile phones, home phones, broadband, TV and more
+                                from Vodafone -
                                 Ireland's
                                 leading
                                 network provider and total communications </p>
                         </div>
-                        <div class="modal-footer"><a class="btn btn-primary"
+                        <div class="modal-footer"><a class="btn btn-dark"
                                 href="https://www.dundrum.ie/shop/vodafone">Tienda original</a></div>
                     </div>
                 </div>
@@ -248,6 +306,7 @@
             <video class="border rounded-5"
                 src="https://videos.ctfassets.net/gi6fitfj7iu4/2OXQEZD2Swkkw8BAKQkXlh/b498dabc13ac0fe99e9c53c3a5a755e3/DD_BEAUTY_MRKT_WEB_BANNER_1440x500.mp4"
                 loop autoplay></video>
+
         </section>
     </article>
 

@@ -6,50 +6,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="contacto.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+
     <title>Inicio</title>
 </head>
 
 <body>
 
+    <!-- sidebar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="media/images/dundrum-logo.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top me-2"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <img src="media/images/dundrum-logo.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top me-2">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i>
+                                Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="cine.html"><i class="bi bi-film"></i> Cine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contacto.html"><i class="bi bi-envelope-fill"></i> Contacto</a>
+                        </li>
 
-    <h3>Bienvenidos a</h3>
-    <h1>Dundrum Town Centre</h1>
-    <h2>El centro comercial más grande de Irlanda</h2>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="restaurantes.html"><i class="bi bi-fork-knife"></i> Restaurantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="tiendas.html"><i class="bi bi-bag-fill"></i> Tiendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="visitanos.html"><i class="bi bi-geo-fill"></i> Visítanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    <header class="container-fluid text-bg-dark text-center p-5 mt-5">
+        <img class="logo" src="media/images/dundrum-logo.png" alt="DunDrum Logo" />
+        <nav class="container d-flex justify-content-between mt-5">
+            <a href="index.html" target="_blank">INICIO</a>
+            <a href="cine.html" target="_blank">CINE</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="ocio.html" target="_blank">OCIO</a>
+            <a href="restaurantes.html" target="_blank">RESTAURANTES</a>
+            <a href="tiendas.html" target="_blank">TIENDAS</a>
+            <a href="visitanos.html" target="_blank">VISITANOS</a>
+        </nav>
+    </header>
+
+
+
 
     <article class="container">
-        <h1 class="text-start mt-4">136 tiendas</h1>
-        <h1 class="text-end mt-4">85,000 m² de área comercial</h1>
-        <h1 class="text-start mt-4">Más de 3,500 plazas de aparcamiento</h1>
-        <h1 class="text-end mt-4">Más de 18 millones de visitantes al año</h1>
-        <h1 class="text-start mt-4">Comida, compras, cine, ocio y más</h1>
+        <section class="text-center mt-5 mb-5">
+            <h3>Bienvenidos a</h3>
+            <h1>Dundrum Town Centre</h1>
+            <h2>El centro comercial más grande de Irlanda</h2>
+        </section>
+
+        <div class="accordion shadow-lg" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h1 class="m-5">136 tiendas</h1>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>El Dundrum Town Centre cuenta con una impresionante variedad de 136 tiendas, ofreciendo una experiencia de compras única e inigualable.</strong> Desde marcas de lujo reconocidas internacionalmente hasta tiendas locales que destacan por su originalidad, este centro comercial tiene algo para todos los gustos y presupuestos. Los visitantes pueden explorar una amplia gama de productos, desde moda y accesorios hasta tecnología, decoración del hogar y mucho más. Además, muchas de estas tiendas ofrecen servicios exclusivos, como asesoramiento personalizado y eventos especiales, que hacen que cada visita sea memorable. Con su diseño moderno y espacios amplios, Dundrum Town Centre garantiza una experiencia de compras cómoda y agradable para toda la familia.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h1 class="m-5">85,000 m²</h1>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>El Dundrum Town Centre se extiende a lo largo de 85,000 m² de área comercial, ofreciendo un espacio amplio y moderno diseñado para satisfacer todas las necesidades de sus visitantes.</strong> Este vasto espacio alberga una impresionante variedad de tiendas, restaurantes, y opciones de entretenimiento, todo bajo un mismo techo. Su diseño arquitectónico combina funcionalidad y estética, creando un ambiente acogedor y atractivo. Además, el centro cuenta con áreas comunes espaciosas, ideales para eventos y actividades especiales, lo que lo convierte en un punto de encuentro para la comunidad. Con su tamaño y diversidad, Dundrum Town Centre redefine la experiencia de los centros comerciales en Irlanda.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h1 class="m-5">Más de 3,500 plazas de aparcamiento</h1>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>El Dundrum Town Centre cuenta con más de 3,500 plazas de aparcamiento, diseñadas para ofrecer comodidad y accesibilidad a todos sus visitantes.</strong> Este amplio espacio de estacionamiento garantiza que siempre haya lugar disponible, incluso en los días de mayor afluencia. Las plazas están distribuidas estratégicamente cerca de las entradas principales, facilitando el acceso directo a las tiendas, restaurantes y áreas de ocio. Además, el aparcamiento está equipado con sistemas de seguridad modernos, incluyendo cámaras de vigilancia y personal de seguridad, para brindar tranquilidad a los usuarios. También se han habilitado espacios reservados para personas con movilidad reducida y estaciones de carga para vehículos eléctricos, reflejando el compromiso del centro con la inclusión y la sostenibilidad. Con estas características, el aparcamiento del Dundrum Town Centre asegura una experiencia sin estrés desde el momento de la llegada.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h1 class="m-5">18 millones de visitantes al año</h1>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>El Dundrum Town Centre recibe más de 18 millones de visitantes al año, consolidándose como uno de los destinos comerciales y de ocio más populares de Irlanda.</strong> Este impresionante flujo de personas refleja la calidad y diversidad de las experiencias que ofrece el centro. Desde su amplia selección de tiendas y restaurantes hasta sus opciones de entretenimiento, Dundrum atrae tanto a locales como a turistas de todas partes del mundo. Además, su ubicación estratégica y fácil acceso en transporte público lo convierten en un punto de encuentro ideal. Este volumen de visitantes también es un testimonio del impacto positivo que el centro tiene en la economía local, generando empleo y fomentando el comercio. Con eventos especiales, promociones y actividades durante todo el año, Dundrum Town Centre sigue siendo un lugar vibrante y dinámico que cautiva a millones de personas cada año.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <h1 class="m-5">Comida, compras, cine, ocio y más</h1>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>El Dundrum Town Centre ofrece una variedad incomparable de tiendas que satisfacen todos los gustos y necesidades.</strong> Desde boutiques de alta gama con las últimas tendencias de moda hasta tiendas especializadas en tecnología, belleza y decoración del hogar, este centro comercial tiene algo para todos. Además, cuenta con marcas internacionales reconocidas y negocios locales únicos que destacan por su originalidad y calidad. Los visitantes pueden disfrutar de una experiencia de compras diversa y emocionante, explorando desde ropa y accesorios hasta productos gourmet y artículos exclusivos. Con su amplia selección, Dundrum Town Centre se posiciona como el destino ideal para quienes buscan variedad y calidad en un solo lugar.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </article>
-
-
-
-    <video src="media/videos/video-inicio.mp4" loop autoplay controls></video>
-
 
     <!-- carousel -->
 
     <div class="carousel">
         <div class="group">
-            <div class="card"><img src="media/images/ocioTienda1.jpg" alt=""></div>
-            <div class="card"><img src="media/images/ocioTienda2.jpg" alt=""></div>
-            <div class="card"><img src="media/images/ocioTienda3.jpg" alt=""></div>
+            <div class="card-carousel"><img src="media/images/carousel/carousel1.jpg" alt=""></div>
+            <div class="card-carousel"><img src="media/images/carousel/carousel2.jpg" alt=""></div>
+            <div class="card-carousel"><img src="media/images/carousel/carousel3.jpg" alt=""></div>
         </div>
-        <!-- Add `aria-hidden` to hide the duplicated cards from screen readers. -->
+        <!-- Add 'aria-hidden' to hide the duplicated cards from screen readers. -->
         <div aria-hidden class="group">
-            <div class="card"><img src="media/images/cine01.jpg" alt=""></div>
-            <div class="card"><img src="media/images/cine02.jpg" alt=""></div>
-            <div class="card"><img src="media/images/cafe01.jpg" alt=""></div>
+            <div class="card-carousel"><img src="media/images/carousel/carousel1.jpg" alt=""></div>
+            <div class="card-carousel"><img src="media/images/carousel/carousel2.jpg" alt=""></div>
+            <div class="card-carousel"><img src="media/images/carousel/carousel3.jpg" alt=""></div>
         </div>
     </div>
-
-
-
-
 
 </body>
 

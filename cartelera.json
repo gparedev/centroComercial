@@ -1,32 +1,38 @@
 [
     {
-        "titulo": "OLDBOY",
-        "descripcion": "Un hombre es secuestrado y encarcelado durante 15 años.",
-        "video": "https://www.youtube.com/embed/tAaBkFChaRg"
+        "titulo": "Mickey 17",
+        "descripcion": "Mickey 17 es una película de ciencia ficción dirigida por Bong Joon-ho. ¡No te la pierdas!",
+        "video": "https://www.youtube.com/embed/tA1s65o_kYM?si=n85jzQwef5Pi6zJo",
+        "imagen": "https://pics.filmaffinity.com/mickey_17-530854063-large.jpg"
     },
     {
-        "titulo": "LOS ODIOSOS 8",
-        "descripcion": "Un grupo de cazarrecompensas se encuentra atrapado.",
-        "video": "https://www.youtube.com/embed/JxVRgBOL8jc?si=or339cKHYZ9-mbEL"
+        "titulo": "Jujutsu Kaisen 2",
+        "descripcion": "Jujutsu Kaisen 2 es una película de acción y fantasía basada en el popular anime. ¡No te la pierdas!",
+        "video": "https://www.youtube.com/embed/a70_eOnIS3o?si=2UCehCka66r4OCGj",
+        "imagen": "https://pics.filmaffinity.com/jujutsu_kaisen_2-848252164-large.jpg"
     },
     {
-        "titulo": "INTERESTELLAR",
-        "descripcion": "Un grupo de astronautas viaja a través de un agujero de gusano.",
-        "video": "https://www.youtube.com/embed/UoSSbmD9vqc?si=i0HTzMqbv2vriwsL"
+        "titulo": "Chernobyl",
+        "descripcion": "Chernobyl es una serie dramática basada en los eventos del desastre nuclear de 1986. ¡No te la pierdas!",
+        "video": "https://www.youtube.com/embed/s9APLXM9Ei8?si=ggvprIhRdKH5pLFr",
+        "imagen": "https://pics.filmaffinity.com/chernobyl-183665235-large.jpg"
     },
     {
-        "titulo": "SHREK 2",
-        "descripcion": "Shrek y Fiona regresan de su luna de miel y enfrentan nuevos desafíos.",
-        "video": "https://www.youtube.com/embed/xBgSfhp5Fxo?si=fp3qVWv0awcKYIH7"
+        "titulo": "The Last Dance",
+        "descripcion": "The Last Dance es una serie documental que narra la carrera de Michael Jordan y su impacto en el baloncesto. ¡No te la pierdas!",
+        "video": "https://www.youtube.com/embed/N9Z9JtNcCWY?si=CLGETtZyYpU3QnJn",
+        "imagen": "https://pics.filmaffinity.com/the_last_dance-389158062-large.jpg"
     },
     {
-        "titulo": "SHUTTER ISLAND",
-        "descripcion": "Un detective investiga la desaparición de una paciente en un hospital psiquiátrico.",
-        "video": "https://www.youtube.com/embed/sybSFbmzyUg?si=2rS9UyPBM0-3Sx3w"
+        "titulo": "Parásitos",
+        "descripcion": "Parásitos es una película surcoreana que explora la lucha de clases a través de la historia de dos familias. Ganadora del Óscar a la Mejor Película. ¡No te la pierdas!",
+        "video": "https://www.youtube.com/embed/90dWVETAdtI?si=bSSwIZ0l_Tw6zAqD",
+        "imagen": "https://pics.filmaffinity.com/gisaengchung-432616131-large.jpg"
     },
     {
-        "titulo": "PREDATOR BADLANDS",
-        "descripcion": "Un grupo de soldados de élite se enfrenta a un alienígena mortal.",
-        "video": "https://www.youtube.com/embed/oFkbsEKaoSE?si=pgDKaLN_MDsPWR_6"
+        "titulo": "Spider-Man",
+        "descripcion": "Spider-Man es una película de acción y aventura basada en el popular superhéroe de Marvel. Sigue las aventuras de Miles Morales.",
+        "video": "https://www.youtube.com/embed/cqGjhVJWtEg?si=4TLCOCgdL9La9CMb",
+        "imagen": "https://pics.filmaffinity.com/spider_man_across_the_spider_verse-257260163-large.jpg"
     }
 ]

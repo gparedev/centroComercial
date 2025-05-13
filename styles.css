@@ -17,10 +17,15 @@ h1, h2, h3, h4, h5, h6 {
 
 img {
     width: 100%;
+    object-fit: contain;
 }
 
 video {
     width: 100%;
+}
+
+.establecimiento h3 {
+    margin: 0;
 }
 
 .foto-logo {

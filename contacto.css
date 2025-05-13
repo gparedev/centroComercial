@@ -63,3 +63,15 @@ footer a:hover {
     color: #dbdbdb;
     text-decoration: underline;
 }
+
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        display: none;
+    }
+
+    article h3 {
+        margin-top: 80px;
+    }
+}

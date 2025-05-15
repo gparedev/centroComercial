@@ -11,7 +11,12 @@ body {
     font-family: "Arvo", serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Poppins", sans-serif;
 }
 
@@ -31,4 +36,28 @@ video {
 .foto-logo {
     height: 200px;
     object-fit: contain;
+}
+
+.navbar i {
+    padding-right: 5px;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+::after { /*para acordeón del index eliminar flecha que no se puede cambiar de color*/
+    display: none; 
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+    .foto-logo {
+        height: 150px;
+    }
+
 }

@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesAlejandro.css">
     <title>Visitanos</title>
 </head>
 
@@ -38,39 +39,41 @@
                 horarios, servicios, zonas destacadas y mucho más.<br />
             </p>
         </section>
-        
-        <!-- Horarios -->
-        <article>
-            <h2>Horarios</h2>
-            <p>
-                Lunes - 09:00h -21:00h
-                <br>
-                Martes - 09:00h - 21:00h
-                <br>
-                Miércoles - 09:00h - 21:00h
-                <br>
-                Jueves - 09:00h - 21:00h
-                <br>
-                Viernes - 09:00h - 21:00h
-                <br>
-                Sábado - 09:00h - 19:00h
-                <br>
-                Domingo - 10:00h - 19:00h
-            </p>
-        </article>
-        <!-- Dirección y datos de contacto pueden estar a la derecha en una columna-->
-        <!-- Dirección -->
-        <article>
-            <h2>Dirección</h2>
-            <p>
-                <!--Icono de mapa -->Dundrum Town Centre,<br>
-                Sandyford Road,<br>
-                Dundrum,<br>
-                Dublin 16
-            </p>
-        </article>
+
+        <!-- Fila para Horario y Dirección -->
+        <div class="row my-5">
+            <!-- Horarios -->
+            <article class="col-md-6">
+                <h2>Horarios</h2>
+                <p>
+                    Lunes - 09:00h -21:00h
+                    <br>
+                    Martes - 09:00h - 21:00h
+                    <br>
+                    Miércoles - 09:00h - 21:00h
+                    <br>
+                    Jueves - 09:00h - 21:00h
+                    <br>
+                    Viernes - 09:00h - 21:00h
+                    <br>
+                    Sábado - 09:00h - 19:00h
+                    <br>
+                    Domingo - 10:00h - 19:00h
+                </p>
+            </article>
+            <!-- Dirección -->
+            <article class="col-md-6">
+                <h2>Dirección</h2>
+                <p>
+                    <!--Icono de mapa -->Dundrum Town Centre,<br>
+                    Sandyford Road,<br>
+                    Dundrum,<br>
+                    Dublin 16
+                </p>
+            </article>
+        </div>
         <!-- Datos de contacto -->
-        <article>
+        <article class="mb-5">
             <h2>Datos de contacto</h2>
             <p>
                 Para contactar con atención al cliente, por favor, contacte con:
@@ -83,36 +86,41 @@
                 <a href="https://notlostenquiry.com/dundrum-town-centre/">notlostenquiry.com</a>
             </p>
         </article>
-        <!-- Información de transporte público -->
-        <article>
-            <h2>Información de transporte</h2>
+        <!-- Fila para info de transporte y mapa -->
+        <div class="row my-5">
+            <!-- Información de transporte público -->
+            <article class="col-md-6">
+                <h2>Información de transporte</h2>
 
-            Ya sea en coche, caminando, en bicicleta o en transporte público, ¡llegar al centro de Dundrum es
-            facilísimo!
-            <br><br>
-            Contamos con acceso desde la M50 en la salida 13.
-            <br><br>
-            Cerca de nuestras instalaciones llegan:
-            <br><br>
-            Autobuses: 14, 74, 44, 44B, L25.<br>
-            Tranvías: verde.<br>
-            Trenes: S4, S6.
-        </article>
-        <!-- Mapa de localización -->
-        <article>
-            <h2>Mapa de localización</h2>
+                Ya sea en coche, caminando, en bicicleta o en transporte público, ¡llegar al centro de Dundrum es
+                facilísimo!
+                <br><br>
+                Contamos con acceso desde la M50 en la salida 13.
+                <br><br>
+                Cerca de nuestras instalaciones llegan:
+                <br><br>
+                Autobuses: 14, 74, 44, 44B, L25.<br>
+                Tranvías: verde.<br>
+                Trenes: S4, S6.
+            </article>
+            <!-- Mapa de localización -->
+            <article class="col-md-6">
+                <h2>Mapa de localización</h2>
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.1425213438683!2d-6.244826923078841!3d53.286981972272095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670965e5fbaad5%3A0x3e0c51d84ccc7fdb!2sDundrum%20Town%20Centre!5e0!3m2!1ses!2ses!4v1745494535935!5m2!1ses!2ses"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </article>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.1425213438683!2d-6.244826923078841!3d53.286981972272095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670965e5fbaad5%3A0x3e0c51d84ccc7fdb!2sDundrum%20Town%20Centre!5e0!3m2!1ses!2ses!4v1745494535935!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </div>
         <!-- Información del parking -->
-        <article>
+
+        <article class="row my-5">
             <h2>Información de aparcamiento</h2>
 
             <p>
-                En Dundrum Town Centre hay 3 zonas de aparcamiento para vehículos y varias zonas de aparcamiento para
+                En Dundrum Town Centre hay 3 zonas de aparcamiento para vehículos y varias zonas de aparcamiento
+                para
                 bicicletas.
                 <br><br>
                 En total contamos con 3100 plazas de aparcamiento para vehículos y 300 plazas de aparcamiento para
@@ -123,34 +131,47 @@
             <p>El aparcamiento para bicicletas es gratis y libre de horarios.</p>
 
             <h3>Aparcamiento para vehículos</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Tarifas</h4>
+                    <p>
+                        8:00-18:00
+                        <br><br>
+                        0-3 horas: 3,70 €
+                        <br>
+                        3-4 horas: 6,70 €
+                        <br>
+                        4+ horas (tarifa máxima diaria): 9,70 €
+                        <br><br>
+                        18:00-00:00: 3,70 €
+                        <br><br>
+                        Gratis entre medianoche y las 8:00
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Horario</h4>
+                    <p>El horario del aparcamiento para vehículos es de las 6 de la mañana a la 1 de la mañana todos
+                        los
+                        días de
+                        la
+                        semana</p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    Tres horas de aparcamiento gratuito con una compra de 30 € o más en Tesco. Se aplican
+                    términos y
+                    condiciones.
+                    Los artículos con IVA, como alcohol, medicamentos, tabaco y billetes de lotería, están
+                    excluidos
+                    de
+                    la
+                    oferta.
+                    Para más información, contacte con el servicio de atención al cliente de Tesco.
 
-            <h4>Horario</h4>
-            <p>El horario del aparcamiento para vehículos es de las 6 de la mañana a la 1 de la mañana todos los días de
-                la
-                semana</p>
-
-            <h4>Tarifas</h4>
-            <p>
-                8:00-18:00
-                <br><br>
-                0-3 horas: 3,70 €
-                <br>
-                3-4 horas: 6,70 €
-                <br>
-                4+ horas (tarifa máxima diaria): 9,70 €
-                <br><br>
-                18:00-00:00: 3,70 €
-                <br><br>
-                Gratis entre medianoche y las 8:00
-                <br><br>
-                Tres horas de aparcamiento gratuito con una compra de 30 € o más en Tesco. Se aplican términos y
-                condiciones.
-                Los artículos con IVA, como alcohol, medicamentos, tabaco y billetes de lotería, están excluidos de la
-                oferta.
-                Para más información, contacte con el servicio de atención al cliente de Tesco.
-
-                Se aceptan tarjetas de crédito y débito.
-            </p>
+                    Se aceptan tarjetas de crédito y débito.
+                </p>
+            </div>
 
             <h4>Información adicional</h4>
             <p>
@@ -200,13 +221,13 @@
             </p>
         </article>
         <!-- Plano de los establecimientos -->
-        <article>
+        <article  class="row my-5">
             <h2>Plano de los establecimientos</h2>
 
             <img src="media\images\planoTienda.jpg" alt="Plano de establecimientos">
         </article>
         <!-- Servicios -->
-        <article>
+        <article  class="row my-5">
             <h2>Servicios</h2>
 
             <h3>Mostrador de Atención al Cliente</h3>
@@ -239,7 +260,7 @@
             <p>Seleccione Dundrum Free Wifi de su lista de redes y siga las instrucciones para conectarse.</p>
         </article>
         <!-- Facilidades para las familias-->
-        <article>
+        <article  class="row my-5">
             <h2>Facilidades para las familias</h2>
             <p>
                 Ir de compras con niños nunca ha sido tan fácil gracias a nuestras prácticas instalaciones para
@@ -305,7 +326,7 @@
             </p>
         </article>
         <!-- Accesibilidad -->
-        <article>
+        <article  class="row my-5">
             <h2>Accesibilidad</h2>
 
             <p>

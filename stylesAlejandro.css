@@ -1,0 +1,8 @@
+.modal-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.modal-footer a:hover {
+    color: rgb(230, 230, 230);
+}

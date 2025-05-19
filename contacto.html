@@ -48,37 +48,50 @@
                 </div>
 
                 <div class="text-start">
-                    <form action="http://www.cursos-diseño.es/mostrar.php" method="post">
-                        <div class="mt-3">
-                            Nombre
-                            <input type="text" name="nombre" class="form-control mt-1" required/>
-                        </div>
-                        <div class="mt-3">
-                            Apellidos
-                            <input type="text" name="apellido" class="form-control mt-1" required/>
-                        </div>
-                        <div class="mt-3">
-                            Dirección
-                            <input type="text" name="dir" class="form-control mt-1" placeholder="Indica tu dirección" required mt-1/>
-                        </div>
-                        <div class="mt-3">
-                            Código postal
-                            <input type="text" name="cp" id="cp" class="form-control mt-1" maxlength="5" minlength="5" required/>
-                        </div>
-                        <div class="mt-3">
-                            Email
-                            <input type="email" name="mail" id="mail" class="form-control mt-1" placeholder="emailEjemplo@mail.com" required/>
-                        </div>
-                        <div class="mt-3">
-                            Confirma email
-                            <input type="email" name="mailConf" id="mailConf" class="form-control mt-1" required />
-                            <span id="errorEmail" class="text-danger" style="display: none;">Los correos electrónicos no coinciden.</span>
+                    <form action="http://www.cursos-diseño.es/mostrar.php" method="post" class="bg-light p-3 mt-4 border border-dark rounded col-lg-11 mx-auto col-xxl-8">
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="mt-3 col">
+                                Nombre
+                                <input type="text" name="nombre" class="form-control mt-1" required/>
+                            </div>
 
-                        </div>  
-                        <div class="mt-3">
-                            Teléfono
-                            <input type="tel" name="telef" class="form-control mt-1" required/>
+                            <div class="mt-3 col">
+                                Apellidos
+                                <input type="text" name="apellido" class="form-control mt-1" required/>
+                            </div>
                         </div>
+
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="mt-3 col">
+                                Dirección
+                                <input type="text" name="dir" class="form-control mt-1" placeholder="Indica tu dirección" required mt-1/>
+                            </div>
+
+                            <div class="mt-3 col">
+                                Código postal
+                                <input type="text" name="cp" id="cp" class="form-control mt-1" maxlength="5" minlength="5" required/>
+                            </div>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="mt-3 col">
+                                Email
+                                <input type="email" name="mail" id="mail" class="form-control mt-1" placeholder="emailEjemplo@mail.com" required/>
+                            </div>
+                            <div class="mt-3 col">
+                                Confirma email
+                                <input type="email" name="mailConf" id="mailConf" class="form-control mt-1" required />
+                                <span id="errorEmail" class="text-danger" style="display: none;">Los correos electrónicos no coinciden.</span>
+                            </div>  
+                        </div>
+                        
+                        <div class="row">
+                            <div class="mt-3 col-6 col-md-4">
+                                Teléfono
+                                <input type="tel" name="telef" class="form-control mt-1" required/>
+                            </div>
+                        </div>
+                        
                         <div class="mt-3">
                             Comentarios
                             <textarea name="comentarios" class="form-control mt-1" rows="5"></textarea>

@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const errorEmail = document.getElementById("errorEmail");
 
     function checkEmails() {
-        
+
         if (email.value === confirmEmail.value) {
             submitButton.disabled = false;
             errorEmail.style.display = "none";
             return true;
-            
+
         } else {
             submitButton.disabled = true;
             errorEmail.style.display = "block";
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             submitButton.disabled = true;
         }
-        
+
     }
 
     // Los eventos tipo input estan constantemente comprobando que el valor sea el mismo cada vez que escribimos.

@@ -115,21 +115,54 @@
                     </nav>
                 </div>
 
+                <div class="text-start">
+                    <form action="http://www.cursos-diseño.es/mostrar.php" method="post" class="bg-light p-3 mt-4 border border-dark rounded col-lg-11 mx-auto col-xxl-8">
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="mt-3 col">
+                                Nombre
+                                <input type="text" name="nombre" class="form-control mt-1" required/>
+                            </div>
 
-                <div class="col-12 col-md-6 p-3">
-                    <nav class="d-flex flex-column align-items-center justify-content-between gap-3">
-                        <img class="logo" src="media/images/dundrum-logo.png" alt="DunDrum Logo" />
-                        <a href="visitanos.html" target="_blank" class="mt-3"><i class="bi bi-geo-alt"></i>DUNDRUM TOWN
-                            CENTRE</a>
-                        <div class="d-flex flex-column align-items-center justify-content-center">
-                            <p class="m-0">SANDYFORD ROAD,<br>DUNDRUM,<br>DUBLIN 16</p>
+                            <div class="mt-3 col">
+                                Apellidos
+                                <input type="text" name="apellido" class="form-control mt-1" required/>
+                            </div>
                         </div>
-                        <div class="d-flex gap-3 justify-content-center footer-icons">
-                            <a href="https://www.facebook.com/DundrumTC/" target="_blank"><i
-                                    class="bi bi-facebook fs-2"></i></a>
-                            <a href="https://x.com/DundrumTC" target="_blank"><i class="bi bi-twitter fs-2"></i></a>
-                            <a href="https://www.instagram.com/dundrumtc/" target="_blank"><i
-                                    class="bi bi-instagram fs-2"></i></a>
+
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="mt-3 col">
+                                Dirección
+                                <input type="text" name="dir" class="form-control mt-1" placeholder="Indica tu dirección" required mt-1/>
+                            </div>
+
+                            <div class="mt-3 col">
+                                Código postal
+                                <input type="text" name="cp" id="cp" class="form-control mt-1" maxlength="5" minlength="5" required/>
+                            </div>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="mt-3 col">
+                                Email
+                                <input type="email" name="mail" id="mail" class="form-control mt-1" placeholder="emailEjemplo@mail.com" required/>
+                            </div>
+                            <div class="mt-3 col">
+                                Confirma email
+                                <input type="email" name="mailConf" id="mailConf" class="form-control mt-1" required />
+                                <span id="errorEmail" class="text-danger" style="display: none;">Los correos electrónicos no coinciden.</span>
+                            </div>  
+                        </div>
+                        
+                        <div class="row">
+                            <div class="mt-3 col-6 col-md-4">
+                                Teléfono
+                                <input type="tel" name="telef" class="form-control mt-1" required/>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-3">
+                            Comentarios
+                            <textarea name="comentarios" class="form-control mt-1" rows="5"></textarea>
                         </div>
                     </nav>
                 </div>
@@ -154,4 +187,53 @@
     <script src="contacto.js"></script>
 </body>
 
+        <footer class="container-fluid text-bg-dark text-center m-0">
+            <div class="p-4 d-flex align-items-center justify-content-center flex-column">
+                <div class="row container">
+                    <div class="col-12 col-md-6 p-3">
+                        <nav class="d-flex flex-column align-items-center justify-content-between gap-3"> 
+                            <a href="index.html" target="_blank">INICIO</a>
+                            <a href="cine.html" target="_blank">CINE</a>
+                            <a href="contacto.html">CONTACTO</a>
+                            <a href="ocio.html" target="_blank">OCIO</a>
+                            <a href="restaurantes.html" target="_blank">RESTAURANTES</a>
+                            <a href="tiendas.html" target="_blank">TIENDAS</a>
+                            <a href="visitanos.html" target="_blank">VISITANOS</a>
+                        </nav>
+                    </div>
+                    
+    
+                    <div class="col-12 col-md-6 p-3">
+                        <nav class="d-flex flex-column align-items-center justify-content-between gap-3"> 
+                            <img class="logo" src="media/images/dundrum-logo.png" alt="DunDrum Logo" />
+                            <a href="visitanos.html" target="_blank" class="mt-3"><i class="bi bi-geo-alt"></i>DUNDRUM TOWN CENTRE</a>
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <p class="m-0">SANDYFORD ROAD,<br>DUNDRUM,<br>DUBLIN 16</p>
+                            </div>
+                            <div class="d-flex gap-3 justify-content-center footer-icons">
+                                <a href="https://www.facebook.com/DundrumTC/" target="_blank"><i class="bi bi-facebook fs-2"></i></a>
+                                <a href="https://x.com/DundrumTC" target="_blank"><i class="bi bi-twitter fs-2"></i></a>
+                                <a href="https://www.instagram.com/dundrumtc/" target="_blank"><i class="bi bi-instagram fs-2"></i></a>  
+                            </div>
+                        </nav>
+                    </div> 
+                </div>
+            </div>
+            <hr>
+            <div class="row p-4 g-0">
+                <div class="col-12 col-md-3"><a href="https://www.dundrum.ie/web-accessibility" target="_blank">Web Accessibility</a></div>
+                <div class="col-12 col-md-3"><a href="https://www.dundrum.ie/cookie-policy" target="_blank">Cookie Policy</a></div>
+                <div class="col-12 col-md-3"><a href="https://www.dundrum.ie/sitemap" target="_blank">Site Map</a></div>
+                <div class="col-12 col-md-3"><a href="https://www.dundrum.ie/privacy-policy" target="_blank">Privacy and Policy</a></div>
+            </div>
+            
+            
+        </footer> 
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"
+        ></script>
+        <script src="contacto.js"></script>
+    </body>
 </html>

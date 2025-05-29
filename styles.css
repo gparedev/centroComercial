@@ -31,11 +31,13 @@ video {
 
 .btn-cambiado {
     background-color: #212529;
+    color: white;
     border: none;
 }
 
 .btn-cambiado:hover {
     background-color: #7e7e7e;
+    color: white;
 }
 
 .btn-cambiado:active {

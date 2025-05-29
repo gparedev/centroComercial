@@ -31,7 +31,7 @@ video {
 
 /* HEADER */
 header {
-    background-image: url("media/images/contact-01.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url("media/images/contact-01.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -29,6 +29,23 @@ video {
     width: 100%;
 }
 
+.btn-cambiado {
+    background-color: #212529;
+    border: none;
+}
+
+.btn-cambiado:hover {
+    background-color: #7e7e7e;
+}
+
+.btn-cambiado:active {
+    background-color: #7e7e7e !important;
+}
+
+.btn-cambiado:not(:active) {
+    background-color: #212529;
+}
+
 /* HEADER */
 header {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url("media/images/contact-01.jpg");
@@ -36,6 +53,10 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
+}
+
+.texto-titulo {
+    text-align: center;
 }
 
 /* NAVBAR */
@@ -143,6 +164,10 @@ footer a:hover {
         display: none;
     }
 
+    h1 {
+        margin-top: 30px;
+    }
+
     article h3 {
         margin-top: 80px;
     }
@@ -150,6 +175,10 @@ footer a:hover {
     .foto-logo {
         height: 150px;
     }
+
+    .texto-titulo {
+    text-align: left;
+}
 
 }
 

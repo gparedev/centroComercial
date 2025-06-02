@@ -41,11 +41,15 @@ video {
 }
 
 .btn-cambiado:active {
-    background-color: #7e7e7e !important;
+    background-color: #77a7a7 !important;
 }
 
 .btn-cambiado:not(:active) {
     background-color: #212529;
+}
+
+.accordion-button {
+    background-color: #b6dcdc !important;
 }
 
 /* HEADER */
@@ -63,6 +67,11 @@ header {
 
 .text-bg-light {
     background-color: #b6dcdc !important;
+}
+
+.btn {
+    background-color: #b6dcdc !important;
+    color: black !important;
 }
 
 /* NAVBAR */

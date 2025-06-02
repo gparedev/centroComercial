@@ -61,6 +61,10 @@ header {
     text-align: center;
 }
 
+.text-bg-light {
+    background-color: #b6dcdc !important;
+}
+
 /* NAVBAR */
 .navbar i {
     padding-right: 5px;
